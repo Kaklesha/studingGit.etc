@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Знакомство с тегами  формами </title>
+</head>
+<body>
+    <!-- Метод отправки Формы ГЕТТ от пользователя открыто-->
+ <form action="#" method="get"></form> <!-- # это сслыка на сервер условно-->
+<!-- Метод отправки Пост формы "скрыто" средствами браузера-->
+ <form action="#" method="post" enctype="multipart/form-data">
+ <div> <!--Поле вводддда -->
+    <input type="text" name="UserName" value="" id="">
+</div>
+<div>
+    <input type="tel"> <!-- Для воода номера телефона например -->
+</div>
+<div> <!-- Поле для ввода пароля *** -->
+    <input type="password" name="userPassword" id="">
+</div>
+<div>
+    <!-- Radios радио кнопки -->
+<p><input checked type="radio" name="beer" value="lager" id=""> Светлое пиво</p>
+<p><input type="radio" name="beer" value="dark" id=""> тёмное пиво</p>
+</div>
+<br />
+<div>
+    <p><input type="radio" name="beer2" value="lager" id=""> Светлое пиво</p>
+    <p><input checked type="radio" name="beer2" value="dark" id=""> тёмное пиво</p>
+    </div>
+    <!-- Значения отрибука name не должны повторяться "иначе сервер ничего не поймёт"
+    ИСКЛЮЧЕНИЕМ явл таги input с type="radio" что группируются-->
+    <!-- Checkboxs чекбоксы -->
+    <div>
+        <p><input type="checkbox" name="car" value="yes" id="">Are you have a car?</p>
+        <p><input type="checkbox" name="car1" value="yes" id="">Are you have a car2?</p>
+        <p><input checked type="checkbox" name="car2" value="yes" id="">Are you have a car3?</p>
+        <p><input type="checkbox" name="car3" value="yes" id="">Are you have a car4?</p>
+        
+    </div>
+
+    <div>
+        <p><input type="file" name="photo" value="yes" ></p>
+    </div>
+    <div> <!-- Большой текст -->
+        <textarea name="text" id="" cols="30" rows="10"></textarea> 
+        <!-- Как правило cols rows убирает, т.к контролируем размер через style.css  script.js-->
+    </div>
+        <!-- Выпадающий список -->
+    <div>
+        <select name="color" id="">  <!--коробочка списка -->
+            <option value="red">Красный</option> <!--пункт списка -->
+            <option selected value="yellow">Жёлтый</option> <!--пункт списка 
+                (selected - выбор по умолчанию)-->
+            <option value="Green">Зелёный</option> <!--пункт списка -->
+        </select>
+        <!-- Выпадающий список с множественным выбором через Ctrl+ leftClick -->
+        <select multiple name="color" id="">  <!--коробочка списка -->
+            <option value="red">Красный</option> <!--пункт списка -->
+            <option value="yellow">Жёлтый</option> <!--пункт списка -->
+            <option value="Green">Зелёный</option> <!--пункт списка -->
+            
+        </select>
+        
+    </div>
+    <br />
+    <div>
+        <button type="submit"> <!-- Отправка всей формы и всех заполненных полей-->
+            Отправить
+        </button>
+        <button type="reset"> <!-- Отчистка всей формы и всех заполненных полей-->
+            отчистить
+        
+        </button>
+    </div>
+
+</form> <!-- Здесь чтобы работали кнопки-->
+<div> <!-- Атрибут placeholder(Подпись) для поля input "text" and textarea -->>
+<input placeholder="Подпись поля" type="text">
+<textarea placeholder="Подпись поля" name="brr" id="" cols="30" rows="10"></textarea>
+</div>
+    <!--   Для всех тегов кроме form можно применить атрибут disabled
+    Заблокированные теги не передают данные на сервер-->
+    <div>
+        <textarea disabled placeholder="Подпись поля" name="brr" id="" cols="30" rows="10"></textarea>
+    </div>
+
+    <!-- Для всех "интерактивных" тегов применить можно tabindex 
+        по значениями начиная с 1.
+        Что определяет порядок перехода между элементами при нажатии клавижи TAB 
+        Для radio групп тегов этот индекс должен быть одинаковым!!!
+    -->
+    <div>
+        <textarea tabindex="1" placeholder="Подпись поля" name="brr" id="" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+        <p><input tabindex="2" type="radio" name="beer2" value="lager" id=""> Светлое пиво</p>
+        <p><input tabindex="2"  type="radio" name="beer2" value="dark" id=""> тёмное пиво</p>
+    </div>
+
+    <div>
+        <p><input tabindex="3" type="radio" name="beer4" value="lager" id=""> Светлое пиво</p>
+       <!-- Если checked то tabindex проигнарирует другие radios-->
+        <p><input checked tabindex="3"  type="radio" name="beer4" value="dark" id=""> тёмное пиво</p>
+    </div>
+    
+
+    </body>
+</html> 

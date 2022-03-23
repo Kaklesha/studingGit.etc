@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Знакомство с тегами  формами </title>
+</head>
+<body>
+
+    <form action="#" method="get" enctype="multipart/form-data">
+    <div>
+        <p>Имя</p>
+        <p><input  placeholder="Write name here" tabindex="1" name="userName" type="text"></p>
+    </div>
+    <div>
+        <p>Пароль</p>
+        <p><input placeholder="Write password here" tabindex="2" type="password" name="userPass"></p>
+    </div>
+    <div>
+        <p>Номер</p>
+        <p><input tabindex="3" type="tel" placeholder="Write number of phone" name="number"></p>
+    </div>
+    <div>
+    <p>Пол(Gender)</p>
+        <div>
+           <input tabindex="4"  checked type="radio" name="gender1" value="Male">Мужской
+            <input tabindex="4" type="radio" name="gender1" value="Female">Женский
+            <input tabindex="4" type="radio" name="gender1" value="Other"> Другой
+        </div>
+        <br>
+        <div>
+            <p>Имущество</p>
+            <div>
+                <p><input tabindex="5" checked type="checkbox" name="beer" value="street bike">Велосипед</p>
+                <p><input tabindex="6" type="checkbox" name="beer1" value="car">Машина</p>
+                <p><input tabindex="7" disabled type="checkbox" name="beer2" value="apartment">Квартира</p>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <p>Дополнительная информация</p>
+        <div>
+            <textarea name="DopInfo" tabindex="8" id="" cols="30" rows="10" placeholder="Write info here" ></textarea>
+        </div>
+    </div>
+    <div>
+        <p>Add a photo</p>
+        <input type="file" tabindex="9">
+    </div>
+    <div>
+        <p>Любимый цвет</p>
+        <div>
+            <select name="colors" id="" tabindex="10">
+            <option value="red">Red</option>
+            <option selected value="yelloy">yelloy</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Действие</p>
+
+            <div>
+                <button tabindex="11" value="submit"> Отправить</button>
+                <button tabindex="12" value="reset">Обновить</button>
+                
+            </div>
+        </div>
+    </div>
+
+    </form>
+
+
+</body>
+</html> 

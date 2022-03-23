@@ -1,0 +1,29 @@
+div{
+
+}
+
+span{
+    font-size: 30px;
+    color: #8745a5;
+    
+}
+
+
+span.bigred{
+    font-size: 35px;
+    color: aqua;
+}
+
+.bigred span{
+    font-size: 50px;
+    color: blue;
+}
+
+.block>p{
+    color: aqua;
+}
+
+.blockf{
+    color: aqua;
+    border: 5px solid #000;
+}

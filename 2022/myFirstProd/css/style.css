@@ -1,0 +1,129 @@
+*{
+    padding: 0; /*  Внутренный отступ */
+    margin: 0; /*  Внешний отступ */
+    border: 0; /*  Граница */
+}
+
+*,*:before,*:after{
+-moz-box-sizing: border-box; /* изменение посчёта ширины блока  */
+-webkit-box-sizing: border-box; /*  так чтобы было удобнее верстать */
+box-sizing: border-box; /*   */
+}
+/* Убираем линии обводки у некоторых броаузеров  */
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+/*  Делает их блочными */
+nav,footer,header,aside{display: block;}
+
+/*  Уравнивают поведение шрифтов и элементов для различных 
+браузеров и запрещают самовольное увеличение шрифта */
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+/*  Чтоб наследовали свойство семейства шрифта */
+input,button,textarea{font-family: inherit;}
+/*  Убирают особенности в разных браузерах(крестик в експлоуре и др) 
+и список стилей маркированного списка и др*/
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button ::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{list-style: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: 400;}
+/*-------------------------------------------*/
+/*Стиль*/
+.arial{ /*ffa*/
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+/*Размер*/
+.fontsize30{
+    font-size: 30px;
+    font-size: 30px; /*fz30*/
+} /*   */
+/*  Написание шрифта  */
+.italic{ /*fsi*/
+    font-style: italic;
+}
+
+/*Насыщенность(Вес) шрифта */
+.font700{
+    font-weight: 700; /*fw700 */
+}
+
+/* ________Св-ва оформления текста____________*/
+.colorred{
+    color: #f00f00; 
+}
+/* Горизонтальное выравнивание текста*/
+.textright{
+    text-align: right; /*tar */
+   
+}
+.textright1{
+    text-align: center;
+  
+}
+.textright2{
+    text-align: left;
+    
+}
+.textright3{
+ text-align: justify;
+}
+
+.decor{
+    text-decoration: underline;
+}
+.decor1{
+    text-decoration: overline;
+}
+.decor2{
+    text-decoration: line-through;
+}
+.decor3{
+    text-decoration: none;
+}
+.shadow{
+    text-shadow: 1px /*смещ-е по гозиронтали*/
+     1px /* по венртикали*/
+    10px /* размер размытия тени*/
+    #000000; /*цвет*/
+}
+/*Трансформирование текста */
+.trans{
+    text-transform: uppercase;
+}
+.trans1{
+    text-transform: capitalize;
+}
+.trans2{
+    text-transform: lowercase;
+}
+
+.ident{ /*Задаёт величену отступа 1й строки блока текста */
+text-indent: 50px;
+}
+
+.lette{
+    letter-spacing: 5px;
+}
+.wlette{
+    word-spacing: 10px;
+}
+.whitrspac{
+white-space: nowrap;
+}
+.lineheight{
+    line-height: 20px;
+}
