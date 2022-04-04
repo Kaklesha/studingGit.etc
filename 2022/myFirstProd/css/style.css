@@ -41,89 +41,40 @@ img{vertical-align: top;}
 
 h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: 400;}
 /*-------------------------------------------*/
-/*Стиль*/
-.arial{ /*ffa*/
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+/*Стиль*/   /* */
 
-}
-/*Размер*/
-.fontsize30{
-    font-size: 30px;
-    font-size: 30px; /*fz30*/
-} /*   */
-/*  Написание шрифта  */
-.italic{ /*fsi*/
-    font-style: italic;
-}
-
-/*Насыщенность(Вес) шрифта */
-.font700{
-    font-weight: 700; /*fw700 */
-}
-
-/* ________Св-ва оформления текста____________*/
-.colorred{
-    color: #f00f00; 
-}
-/* Горизонтальное выравнивание текста*/
-.textright{
-    text-align: right; /*tar */
-   
-}
-.textright1{
-    text-align: center;
-  
-}
-.textright2{
-    text-align: left;
+.example-block{
     
 }
-.textright3{
- text-align: justify;
+.example-string{
 }
 
-.decor{
-    text-decoration: underline;
-}
-.decor1{
-    text-decoration: overline;
-}
-.decor2{
-    text-decoration: line-through;
-}
-.decor3{
-    text-decoration: none;
-}
-.shadow{
-    text-shadow: 1px /*смещ-е по гозиронтали*/
-     1px /* по венртикали*/
-    10px /* размер размытия тени*/
-    #000000; /*цвет*/
-}
-/*Трансформирование текста */
-.trans{
-    text-transform: uppercase;
-}
-.trans1{
-    text-transform: capitalize;
-}
-.trans2{
-    text-transform: lowercase;
-}
-
-.ident{ /*Задаёт величену отступа 1й строки блока текста */
-text-indent: 50px;
-}
-
-.lette{
-    letter-spacing: 5px;
-}
-.wlette{
-    word-spacing: 10px;
-}
-.whitrspac{
-white-space: nowrap;
-}
-.lineheight{
-    line-height: 20px;
-}
+div {
+    width: 120px;
+    height: 60px;
+    padding: 20px;
+    border: 8px solid red;
+    background: yellow;
+  }
+  
+  .content-box {
+    box-sizing: content-box;
+    /* Total width: 160px + (2 * 20px) + (2 * 8px) = 216px
+       Total height: 80px + (2 * 20px) + (2 * 8px) = 136px
+       Content box width: 160px
+       Content box height: 80px */
+  }
+  
+  .border-box {
+    box-sizing: border-box;
+    /* Total width: 160px
+       Total height: 80px
+       Content box width: 160px - (2 * 20px) - (2 * 8px) = 104px
+       Content box height: 80px - (2 * 20px) - (2 * 8px) = 24px */
+  }
+  .top-site-outer {
+    width: 118px;
+    padding: 20px 16px 4px 0px;
+    border-radius: 8px;
+   display: inline-block;
+  }

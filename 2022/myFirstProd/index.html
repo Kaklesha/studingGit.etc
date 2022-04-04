@@ -8,128 +8,260 @@
     <title>Document</title>
 </head>
 <body>
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis blanditiis a eaque, doloremque quas quaerat accusantium nihil, ipsum labore at illum animi eveniet sunt. Quasi omnis unde eius accusamus laudantium!</p>
 
-<br>
-<p class="arial">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nesciunt distinctio iste minus iusto! Fugiat, sed quasi illo labore dolore eos eum hic, sequi ipsum repudiandae, odit harum! Blanditiis, quia.
-</p>
+    <script>
+/*
+function highAndLow(numbers){
+  let arr=numbers.split(" ");
+  let min=arr[0],max=0;
 
-<p class="fontsize30">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla sunt repellendus nihil inventore quas! Labore quam maiores omnis beatae iusto rerum nam, optio eius, molestiae voluptate nesciunt consectetur eveniet necessitatibus!
-
-</p>
-
-<p class="italic">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ullam impedit quibusdam id nihil nemo sit dolorem itaque cupiditate vel reprehenderit soluta illum accusamus temporibus, tenetur quisquam veniam ut est!
-</p>
-<p class="font700">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sequi earum eum ratione in. Neque expedita doloribus voluptas fuga, in maxime modi, aut dolores voluptatum deleniti dolore, dicta ex quo.
-</p>
-<p class="colorred">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quos cumque explicabo qui doloribus optio repellat adipisci quidem est ipsum? Pariatur dolore placeat nam? Enim nam tempora quia magnam accusamus.
-</p>
-<p class="textright">Lorem ipsum dolor sit amet.</p>
-<p class="textright1">Lorem ipsum dolor sit amet.</p>
-<p class="textright2">Lorem ipsum dolor sit amet.</p>
-<p class="textright3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, dolor magnam laboriosam nihil enim temporibus vel, velit hic assumenda neque quas placeat saepe quidem id facilis minus maxime amet delectus?</p>
-
-<p>
-    <br>
-    <p class="decor">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nulla distinctio iusto praesentium quidem! Illum a mollitia earum totam architecto voluptates voluptas aperiam, tempora voluptatem vero excepturi non officia quisquam.
-
-    </p>
-</p>
-<p>
-    <br>
-    <p class="decor1">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nulla distinctio iusto praesentium quidem! Illum a mollitia earum totam architecto voluptates voluptas aperiam, tempora voluptatem vero excepturi non officia quisquam.
+  for (let i = 0; i <= arr.length; i++) { 
+      console.log(arr[i]);
+      
+    if(arr[i]<min){
+        min=arr[i]
+    }else{
+        if(arr[i]>max){
+            max=arr[i];
+        }
+    }
+}
+   // console.log("min",min);
+   // console.log("max",max);
+    return console.log(max+" "+min);
+}
+*/
+/*
+function highAndLow(numbers){
+  let arr=numbers.split(" ");
+  let min=arr[1];
+  let max=0;
+  
+  arr.forEach(function(element) {
+         console.log(element)
+    if(element<min){
+        min=element
+       console.log("min "+min);
+    }else{
+        if(element>max){
+            max=element;
+            console.log("max "+max);
+        }
+        }
         
-    </p>
-</p>
-<p>
-    <br>
-    <p class="decor2">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nulla distinctio iusto praesentium quidem! Illum a mollitia earum totam architecto voluptates voluptas aperiam, tempora voluptatem vero excepturi non officia quisquam.
-        
-    </p>
-</p>
-<p>
-    <br>
-    <p class="decor3">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nulla distinctio iusto praesentium quidem! Illum a mollitia earum totam architecto voluptates voluptas aperiam, tempora voluptatem vero excepturi non officia quisquam.
-        
-    </p>
-</p>
-
-<p>
-    <br>
-    <p class="shadow">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nulla distinctio iusto praesentium quidem! Illum a mollitia earum totam architecto voluptates voluptas aperiam, tempora voluptatem vero excepturi non officia quisquam.
-        
-    </p>
-</p>
+    });
+   // console.log("min",min);
+   // console.log("max",max);
+    return console.log(max+" "+min);
+}*/
 
 
-<p>
-    <br>
-    <p class="trans">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nulla distinctio iusto praesentium quidem! Illum a mollitia earum totam architecto voluptates voluptas aperiam, tempora voluptatem vero excepturi non officia quisquam.
-        
-    </p>
-</p>
+/*
+function highAndLow(numbers){
+    let arr=numbers.split(" ");
+    let n= arr.length
+  //let min=arr[0],max=0;
+  for (let i = 0; i < n-1; i++)
+    arr[i]=Number(arr[i])
+    
 
-<p>
-    <br>
-    <p class="trans1">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nulla distinctio iusto praesentium quidem! Illum a mollitia earum totam architecto voluptates voluptas aperiam, tempora voluptatem vero excepturi non officia quisquam.
-        
-    </p>
-</p>
-<p>
-    <br>
-    <p class="trans2">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nulla distinctio iusto praesentium quidem! Illum a mollitia earum totam architecto voluptates voluptas aperiam, tempora voluptatem vero excepturi non officia quisquam.
-        
-    </p>
-</p>
+  for (let i = 0; i < n-1; i++)
+     { let min = i;
+       for (let j = i+1; j < n; j++)
+        { if (arr[j] < arr[min]) min = j; } 
+       let t = arr[min]; 
+       arr[min] = arr[ i ]; 
+       arr[ i ] = t;
+     }                    
+    //return A; 
+    for (let i = 0; i < n-1; i++)
+    console.log(arr[i]);
+    //alert(arr[i]);
+     
+    }
+    // return console.log(max+" "+min);
+}
+    */
 
-<p>
-    <br>
-    <p class="ident">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nulla distinctio iusto praesentium quidem! Illum a mollitia earum totam architecto voluptates voluptas aperiam, tempora voluptatem vero excepturi non officia quisquam.
-        
-    </p>
-</p>
+/*===============================================Final Version
+function highAndLow(numbers){
+    console.log(numbers);
+    let arr=numbers.split(" ");
+    let n= arr.length
 
-<p>
-    <br>
-    <p class="lette">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nulla distinctio iusto praesentium quidem! Illum a mollitia earum totam architecto voluptates voluptas aperiam, tempora voluptatem vero excepturi non officia quisquam.
-        
-    </p>
-</p>
+  let min=arr[0],max=arr[0];
+  for (let i = 0; i < n-1; i++){
+    arr[i]=Number(arr[i])
+   // console.log(arr[i]);
+  }
 
-<p>
-    <br>
-    <p class="wlette">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nulla distinctio iusto praesentium quidem! Illum a mollitia earum totam architecto voluptates voluptas aperiam, tempora voluptatem vero excepturi non officia quisquam.
+
+  for (let i = 0; i < n-1; i++)
+     { let min = i;
+       for (let j = i+1; j < n; j++)
+        { if (arr[j] < arr[min]) min = j; } 
+       let t = arr[min]; 
+       arr[min] = arr[ i ]; 
+       arr[ i ] = t;
+     }    
+
+
+  console.log("_______________________");
+    for (let i = 0; i < n-1; i++)
+   // console.log(arr[i]);
+
+    arr.forEach(function(element) {
+         console.log(element)
+    if(element<min){
+        min=element
+       console.log("min "+min);
+    }else{
+        if(element>max){
+            max=element;
+            console.log("max "+max);
+        }
+        }
         
-    </p>
-</p>
-<p>
-    <br>
-    <p class="whitrspac">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nulla distinctio iusto praesentium quidem! Illum a mollitia earum totam architecto voluptates voluptas aperiam, tempora voluptatem vero excepturi non officia quisquam.
+    });
+
+    return console.log(max+" "+min);
+    
+    
+
+} */
+
+
+
+//highAndLow("1 2 3 4 5");  // return "5 1"
+//highAndLow("1 2 -3 4 5"); // return "5 -3"
+//highAndLow("1 9 3 4 -5"); // return "9 -5"
+//highAndLow("-4147 -3104 -1123 -1227 -3212 -4113 -2763 -4147 -2767 -2792 -2357 -2042 -2887 -2115 -2819 -1961 -2943 -2020 -1902 -1887 -1353"); 
+// return '-1123 -1353"
+
+
+//«A», «E», «I», «O», «U», «Y»
+
+/*=====================|Final version==========================
+function disemvowel(str) {
+  
+ 
+  let arr = ["A","a","E","e","I","i","O","o","U","u","Y","y"];
+  let strNew="";
+    let isTrue=false;
+   //console.log(str);
+    let i=0;
+  for (let char of str) {
+    i=0;
+      isTrue=false;
+     
+        while(i<arr.length-1){
+            if( char==arr[i]){
+                
+                //console.log(char+" = "+arr[i]);
+                
+                
+            isTrue=true;
+            
+            break;
+            };
+            i++;
+        }
+        if(!isTrue){
+            strNew=strNew+char;
+           
+         }
+      }
+      strNew=String(strNew);
+       return console.log(strNew);
+} */
+//Ths wbst s fr lsrs LL!
+/*++++++++++BEST Prectices 
+function disemvowel(str) {
+  return str.replace(/[aeiou]/gi, '');
+}
+*/
+/*
+function isIsogram(str1) {
+  
+    let str=str1.toLowerCase();
+    if(str=="") return true;
+    let isTrue=false;
+  
+    let i=0;
+  for (let char of str) {
+    i=0;
+    k=0;
+      isTrue=true;
+     
+        while(i<str.length){
+            if( char==str[i]){
+                
+                console.log(char+" = "+str[i]);
+                k++
+                console.log(k);
+            
+            };
+            
+            i++;
+        }
+       if(k>=2){
+        isTrue=false;
         
-    </p>
-</p>
-<p>
-    <br>
-    <p class="lineheight">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nulla distinctio iusto praesentium quidem! Illum a mollitia earum totam architecto voluptates voluptas aperiam, tempora voluptatem vero excepturi non officia quisquam.
-        
-    </p>
-</p>
+           break;
+       }
+      }
+      console.log("_________");
+       return console.log(isTrue);
+} 
+/*+++++BEST PRACTICES 
+function isIsogram(str){ 
+  return !/(\w).*\1/i.test(str)
+}*/
+//isIsogram("Dermatoglyphics");
+//isIsogram("moOse");
+///isIsogram("aba");
+//isIsogram("isIsogram");
+
+
+
+
+/*
+    function explode(s) {
+  
+  
+      //  let str=str1.toLowerCase();
+    
+    let strStack="";
+    
+  for (let char of s) {
+    
+    strStack=strStack+char.repeat(Number(char));
+    
+
+      }
+  
+  return console.log(strStack);
+}
+//+++++BEST PRACTICES
+//const explode = s => s.replace(/\d/g, d => d.repeat(d));
+*/
+/*function explode(s) {
+  return s.split("").map((e) => e.repeat(+e)).join("");
+}
+explode("12345"); */
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
 </body>
 </html>
